@@ -12,7 +12,7 @@ class Agari:
         # we will modify them later, so we need to use a copy
         tiles = tiles_34[:]
 
-        # With open hand we need to remove open sets from hand and replace them with isolated pon sets
+        # With open hand we need to remove open sets from hand and replace them with isolated peng sets
         # it will allow to determine agari state correctly
         if open_sets_34:
             isolated_tiles = find_isolated_tile_indices(tiles)

@@ -255,7 +255,7 @@ def test_closed_pon_fu():
     assert {"fu": 4, "reason": FuCalculator.CLOSED_PON} in fu_details
     assert fu == 40
 
-    # when we ron on the third pon tile we consider pon as open
+    # when we ron on the third peng tile we consider peng as open
     tiles = TilesConverter.string_to_136_array(sou="22678", man="123456", pin="11")
     win_tile = _string_to_136_tile(sou="2")
     hand = _hand(TilesConverter.to_34_array(tiles + [win_tile]))
@@ -281,7 +281,7 @@ def test_closed_terminal_pon_fu():
     assert {"fu": 8, "reason": FuCalculator.CLOSED_TERMINAL_PON} in fu_details
     assert fu == 40
 
-    # when we ron on the third pon tile we consider pon as open
+    # when we ron on the third peng tile we consider peng as open
     tiles = TilesConverter.string_to_136_array(sou="11678", man="123456", pin="11")
     win_tile = _string_to_136_tile(sou="1")
     hand = _hand(TilesConverter.to_34_array(tiles + [win_tile]))
@@ -307,7 +307,7 @@ def test_closed_honor_pon_fu():
     assert {"fu": 8, "reason": FuCalculator.CLOSED_TERMINAL_PON} in fu_details
     assert fu == 40
 
-    # when we ron on the third pon tile we consider pon as open
+    # when we ron on the third peng tile we consider peng as open
     tiles = TilesConverter.string_to_136_array(sou="11678", man="123456", honors="11")
     win_tile = _string_to_136_tile(honors="1")
     hand = _hand(TilesConverter.to_34_array(tiles + [win_tile]))

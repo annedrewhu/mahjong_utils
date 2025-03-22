@@ -5,7 +5,7 @@ from mahjong.utils import is_pon_or_kan
 
 class Chun(Yaku):
     """
-    Pon of red dragons
+    Peng of red dragons
     """
 
     def __init__(self, yaku_id=None):

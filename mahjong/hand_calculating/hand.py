@@ -24,7 +24,7 @@ class HandCalculator:
     ERR_HAITEI_WITHOUT_TSUMO = "haitei_without_tsumo_not_allowed"
     ERR_HOUTEI_WITH_TSUMO = "houtei_with_tsumo_not_allowed"
     ERR_HAITEI_WITH_RINSHAN = "haitei_with_rinshan_not_allowed"
-    ERR_HOUTEI_WITH_CHANKAN = "houtei_with_chankan_not_allowed"
+    ERR_HOUTEI_WITH_CHANGANG = "houtei_with_chankan_not_allowed"
     ERR_TENHOU_NOT_AS_DEALER = "tenhou_not_as_dealer_not_allowed"
     ERR_TENHOU_WITHOUT_TSUMO = "tenhou_without_tsumo_not_allowed"
     ERR_TENHOU_WITH_MELD = "tenhou_with_meld_not_allowed"
@@ -100,7 +100,7 @@ class HandCalculator:
         if self.config.is_ippatsu and not self.config.is_riichi and not self.config.is_daburu_riichi:
             return HandResponse(error=HandCalculator.ERR_IPPATSU_WITHOUT_RIICHI)
 
-        if self.config.is_chankan and self.config.is_tsumo:
+        if self.config.is_changang and self.config.is_tsumo:
             return HandResponse(error=HandCalculator.ERR_CHANKAN_WITH_TSUMO)
 
         if self.config.is_rinshan and not self.config.is_tsumo:
@@ -303,7 +303,7 @@ class HandCalculator:
                     if self.config.yaku.sanshoku.is_condition_met(hand):
                         hand_yaku.append(self.config.yaku.sanshoku)
 
-                # small optimization, try to detect yaku with pon required sets only if we have pon sets in hand
+                # small optimization, try to detect yaku with peng required sets only if we have peng sets in hand
                 if len(pon_sets) or len(kan_sets):
                     if self.config.yaku.toitoi.is_condition_met(hand):
                         hand_yaku.append(self.config.yaku.toitoi)
@@ -363,7 +363,7 @@ class HandCalculator:
                     if self.config.yaku.daisuushi.is_condition_met(hand):
                         hand_yaku.append(self.config.yaku.daisuushi)
 
-                    # closed kan can't be used in chuuren_poutou
+                    # closed gang can't be used in chuuren_poutou
                     if not len(melds) and self.config.yaku.chuuren_poutou.is_condition_met(hand):
                         if tiles_34[win_tile // 4] == 2 or tiles_34[win_tile // 4] == 4:
                             hand_yaku.append(self.config.yaku.daburu_chuuren_poutou)

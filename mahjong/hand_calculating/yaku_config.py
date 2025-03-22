@@ -75,7 +75,7 @@ class YakuConfig:
         self.riichi = Riichi(next(id))
         self.open_riichi = OpenRiichi(next(id))
         self.ippatsu = Ippatsu(next(id))
-        self.chankan = Chankan(next(id))
+        self.changang = Chankan(next(id))
         self.rinshan = Rinshan(next(id))
         self.haitei = Haitei(next(id))
         self.houtei = Houtei(next(id))

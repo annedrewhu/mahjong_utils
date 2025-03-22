@@ -4,7 +4,7 @@ from mahjong.utils import is_chi, is_pon_or_kan
 
 class Sanankou(Yaku):
     """
-    Three closed pon sets, the other sets need not to be closed
+    Three closed peng sets, the other sets need not to be closed
     """
 
     def __init__(self, yaku_id=None):
@@ -22,7 +22,7 @@ class Sanankou(Yaku):
 
     def is_condition_met(self, hand, win_tile, melds, is_tsumo):
         """
-        Three closed pon sets, the other sets need not to be closed
+        Three closed peng sets, the other sets need not to be closed
         :param hand: list of hand's sets
         :param win_tile: 136 tiles format
         :param melds: list Meld objects
@@ -41,7 +41,7 @@ class Sanankou(Yaku):
             if item in open_sets:
                 continue
 
-            # if we do the ron on syanpon wait our pon will be consider as open
+            # if we do the ron on syanpeng wait our peng will be consider as open
             # and it is not 789999 set
             if win_tile in item and not is_tsumo and not len(chi_sets):
                 continue

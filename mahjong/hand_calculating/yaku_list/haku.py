@@ -5,7 +5,7 @@ from mahjong.utils import is_pon_or_kan
 
 class Haku(Yaku):
     """
-    Pon of white dragons
+    Peng of white dragons
     """
 
     def __init__(self, yaku_id=None):

@@ -480,7 +480,7 @@ def test_is_pinfu_hand():
     result = hand.estimate_hand_value(tiles, win_tile)
     assert result.error is not None
 
-    # contains pon or kan
+    # contains peng or kan
     tiles = TilesConverter.string_to_136_array(sou="111456", man="123456", pin="55")
     win_tile = _string_to_136_tile(man="6")
     result = hand.estimate_hand_value(tiles, win_tile)
@@ -1195,7 +1195,7 @@ def test_dora_in_hand():
 
 def test_is_agari_and_closed_kan():
     """
-    There were a bug when we don't count closed kan set for agari
+    There were a bug when we don't count closed gang set for agari
     and calculator though that hand was agari (but it doesn't)
     :return:
     """

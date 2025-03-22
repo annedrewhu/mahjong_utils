@@ -5,7 +5,7 @@ from mahjong.utils import is_pon_or_kan
 
 class YakuhaiWest(Yaku):
     """
-    Pon of west winds
+    Peng of west winds
     """
 
     def __init__(self, yaku_id=None):

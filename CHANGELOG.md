@@ -60,7 +60,7 @@ Releases History
 1.1.2 (2017-10-14)
 ------------------
 
-- Add settings for different kazoe yakuman calculation (it kan be an yakuman or a sanbaiman)
+- Add settings for different kazoe yakuman calculation (it gang be an yakuman or a sanbaiman)
 - Support up to sextuple yakuman scores
 - Support kiriage mangan
 - Allow to disable +2 fu in open hand
@@ -69,7 +69,7 @@ Releases History
 1.1.1 (2017-10-07)
 ------------------
 
-- Fix a bug with not correct agari state determination and closed kan in the hand
+- Fix a bug with not correct agari state determination and closed gang in the hand
 
 1.1.0 (2017-10-07)
 ------------------
@@ -94,9 +94,9 @@ Additional fixes:
 
 Bug fixes:
 
-- Fix refactoring regressions with kan sets and dora calculations
+- Fix refactoring regressions with gang sets and dora calculations
 - Fix regression with sankantsusuukantsu and called chankan
-- Closed kan can't be used in chuuren poutou
+- Closed gang can't be used in chuuren poutou
 - Fix yaku ids (some of them had incorrect numbers)
 
 Features:

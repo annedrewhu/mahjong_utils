@@ -1,5 +1,5 @@
 from mahjong.hand_calculating.yaku_list.aka_dora import AkaDora
-from mahjong.hand_calculating.yaku_list.chankan import Chankan
+from mahjong.hand_calculating.yaku_list.changang import Chankan
 from mahjong.hand_calculating.yaku_list.chantai import Chantai
 from mahjong.hand_calculating.yaku_list.chiitoitsu import Chiitoitsu
 from mahjong.hand_calculating.yaku_list.chinitsu import Chinitsu

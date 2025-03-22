@@ -79,7 +79,7 @@ class HandConfig(HandConstants):
     is_riichi = False
     is_ippatsu = False
     is_rinshan = False
-    is_chankan = False
+    is_changang = False
     is_haitei = False
     is_houtei = False
     is_daburu_riichi = False
@@ -127,7 +127,7 @@ class HandConfig(HandConstants):
         self.is_riichi = is_riichi
         self.is_ippatsu = is_ippatsu
         self.is_rinshan = is_rinshan
-        self.is_chankan = is_chankan
+        self.is_changang = is_chankan
         self.is_haitei = is_haitei
         self.is_houtei = is_houtei
         self.is_daburu_riichi = is_daburu_riichi

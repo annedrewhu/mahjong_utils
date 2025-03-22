@@ -5,7 +5,7 @@ from mahjong.utils import is_pair, is_pon_or_kan
 
 class Shosangen(Yaku):
     """
-    Hand with two dragon pon sets and one dragon pair
+    Hand with two dragon peng sets and one dragon pair
     """
 
     def __init__(self, yaku_id=None):
@@ -25,7 +25,7 @@ class Shosangen(Yaku):
         dragons = [CHUN, HAKU, HATSU]
         count_of_conditions = 0
         for item in hand:
-            # dragon pon or pair
+            # dragon peng or pair
             if (is_pair(item) or is_pon_or_kan(item)) and item[0] in dragons:
                 count_of_conditions += 1
 

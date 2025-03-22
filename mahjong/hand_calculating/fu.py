@@ -13,17 +13,17 @@ class FuCalculator:
     TSUMO = "tsumo"
     HAND_WITHOUT_FU = "hand_without_fu"
 
-    CLOSED_PON = "closed_pon"
-    OPEN_PON = "open_pon"
+    CLOSED_PENG = "closed_peng"
+    OPEN_PENG = "open_peng"
 
-    CLOSED_TERMINAL_PON = "closed_terminal_pon"
-    OPEN_TERMINAL_PON = "open_terminal_pon"
+    CLOSED_TERMINAL_PENG = "closed_terminal_peng"
+    OPEN_TERMINAL_PENG = "open_terminal_peng"
 
-    CLOSED_KAN = "closed_kan"
-    OPEN_KAN = "open_kan"
+    CLOSED_GANG = "closed_gang"
+    OPEN_GANG = "open_gang"
 
-    CLOSED_TERMINAL_KAN = "closed_terminal_kan"
-    OPEN_TERMINAL_KAN = "open_terminal_kan"
+    CLOSED_TERMINAL_GANG = "closed_terminal_gang"
+    OPEN_TERMINAL_GANG = "open_terminal_gang"
 
     def calculate_fu(
         self,
@@ -105,10 +105,10 @@ class FuCalculator:
             open_meld = open_meld and open_meld[0] or None
 
             set_was_open = open_meld and open_meld.opened or False
-            is_kan_set = (open_meld and (open_meld.type == Meld.KAN or open_meld.type == Meld.SHOUMINKAN)) or False
+            is_kan_set = (open_meld and (open_meld.type == Meld.GANG or open_meld.type == Meld.SHOUMINKAN)) or False
             is_honor = set_item[0] in TERMINAL_INDICES + HONOR_INDICES
 
-            # we win by ron on the third pon tile, our pon will be count as open
+            # we win by ron on the third peng tile, our peng will be count as open
             if not config.is_tsumo and set_item == win_group:
                 set_was_open = True
 

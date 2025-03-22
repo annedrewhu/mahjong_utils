@@ -4,7 +4,7 @@ from mahjong.meld import Meld
 
 class SanKantsu(Yaku):
     """
-    The hand with three kan sets
+    The hand with three gang sets
     """
 
     def __init__(self, yaku_id=None):
@@ -21,5 +21,5 @@ class SanKantsu(Yaku):
         self.is_yakuman = False
 
     def is_condition_met(self, hand, melds, *args):
-        kan_sets = [x for x in melds if x.type == Meld.KAN or x.type == Meld.SHOUMINKAN]
+        kan_sets = [x for x in melds if x.type == Meld.GANG or x.type == Meld.SHOUMINKAN]
         return len(kan_sets) == 3

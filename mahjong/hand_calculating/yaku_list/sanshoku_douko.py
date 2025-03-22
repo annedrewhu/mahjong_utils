@@ -4,7 +4,7 @@ from mahjong.utils import is_man, is_pin, is_pon_or_kan, is_sou, simplify
 
 class SanshokuDoukou(Yaku):
     """
-    Three pon sets consisting of the same numbers in all three suits
+    Three peng sets consisting of the same numbers in all three suits
     """
 
     def __init__(self, yaku_id=None):
@@ -25,9 +25,9 @@ class SanshokuDoukou(Yaku):
         if len(pon_sets) < 3:
             return False
 
-        sou_pon = []
-        pin_pon = []
-        man_pon = []
+        sou_peng = []
+        pin_peng = []
+        man_peng = []
         for item in pon_sets:
             if is_sou(item[0]):
                 sou_pon.append(item)

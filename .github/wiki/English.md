@@ -69,9 +69,9 @@ Output:
 1300
 [Tanyao]
 {'fu': 30, 'reason': 'base'}
-{'fu': 4, 'reason': 'closed_pon'}
-{'fu': 4, 'reason': 'closed_pon'}
-{'fu': 2, 'reason': 'open_pon'}
+{'fu': 4, 'reason': 'closed_peng'}
+{'fu': 4, 'reason': 'closed_peng'}
+{'fu': 2, 'reason': 'open_peng'}
 ```
 
 ### How about tsumo?
@@ -92,9 +92,9 @@ Output:
 4000 2000
 [Menzen Tsumo, Tanyao, San Ankou]
 {'fu': 20, 'reason': 'base'}
-{'fu': 4, 'reason': 'closed_pon'}
-{'fu': 4, 'reason': 'closed_pon'}
-{'fu': 4, 'reason': 'closed_pon'}
+{'fu': 4, 'reason': 'closed_peng'}
+{'fu': 4, 'reason': 'closed_peng'}
+{'fu': 4, 'reason': 'closed_peng'}
 {'fu': 2, 'reason': 'tsumo'}
 ```
 
@@ -118,9 +118,9 @@ Output:
 1000
 [Tanyao]
 {'fu': 20, 'reason': 'base'}
-{'fu': 4, 'reason': 'closed_pon'}
-{'fu': 2, 'reason': 'open_pon'}
-{'fu': 2, 'reason': 'open_pon'}
+{'fu': 4, 'reason': 'closed_peng'}
+{'fu': 2, 'reason': 'open_peng'}
+{'fu': 2, 'reason': 'open_peng'}
 ```
 
 Shanten calculation
@@ -165,10 +165,10 @@ Output:
 95 160
 50706024009129176059868128215100
 [Menzen Tsumo, Riichi, Ippatsu, Haitei Raoyue, Yakuhai (wind of place), Yakuhai (wind of round), Daisangen, Suu kantsu, Tsuu iisou, Suu ankou tanki, Dora 24]
-{'fu': 32, 'reason': 'closed_terminal_kan'}
-{'fu': 32, 'reason': 'closed_terminal_kan'}
-{'fu': 32, 'reason': 'closed_terminal_kan'}
-{'fu': 32, 'reason': 'closed_terminal_kan'}
+{'fu': 32, 'reason': 'closed_terminal_gang'}
+{'fu': 32, 'reason': 'closed_terminal_gang'}
+{'fu': 32, 'reason': 'closed_terminal_gang'}
+{'fu': 32, 'reason': 'closed_terminal_gang'}
 {'fu': 20, 'reason': 'base'}
 {'fu': 2, 'reason': 'pair_wait'}
 {'fu': 2, 'reason': 'tsumo'}

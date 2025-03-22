@@ -125,7 +125,7 @@ class HandDivider:
         """
         pair_indices = []
         for x in range(first_index, second_index + 1):
-            # ignore pon of honor tiles, because it can't be a part of pair
+            # ignore peng of honor tiles, because it can't be a part of pair
             if x in HONOR_INDICES and tiles_34[x] != 2:
                 continue
 
@@ -140,7 +140,7 @@ class HandDivider:
         :param tiles_34:
         :param first_index:
         :param second_index:
-        :param hand_not_completed: in that mode we can return just possible shi or pon sets
+        :param hand_not_completed: in that mode we can return just possible shi or peng sets
         :return: list of valid combinations
         """
         indices = []
@@ -179,7 +179,7 @@ class HandDivider:
         ):
             return [valid_combinations]
 
-        # filter and remove not possible pon sets
+        # filter and remove not possible peng sets
         for item in valid_combinations:
             if is_pon(item):
                 count_of_sets = 1
@@ -207,7 +207,7 @@ class HandDivider:
                     if count_of_sets > count_of_possible_sets:
                         valid_combinations.remove(item)
 
-        # lit of chi\pon sets for not completed hand
+        # lit of chi\peng sets for not completed hand
         if hand_not_completed:
             return [valid_combinations]
 
